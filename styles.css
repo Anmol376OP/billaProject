@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.leftbox{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    flex: 5;
+    background-color: rgb(18, 45, 72);
+}
+.rightbox{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    flex: 6;
+    overflow-y: scroll;
+    background: rgb(31, 83, 134)
+}
+.rightbox::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    height: 100vh;
+}
+
+
+@media(max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}
